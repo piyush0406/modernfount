@@ -1,0 +1,99 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class ArticleSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>1,
+        'hero_article'=>1,
+        'secondary_article'=>0
+      ]);
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>1,
+        'hero_article'=>0,
+        'secondary_article'=>1
+      ]);
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>1,
+        'hero_article'=>0,
+        'secondary_article'=>1
+      ]);
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>1,
+        'hero_article'=>0,
+        'secondary_article'=>1
+      ]);
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>1,
+        'hero_article'=>0,
+        'secondary_article'=>0
+      ]);
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>0,
+        'hero_article'=>0,
+        'secondary_article'=>0
+      ]);
+      DB::table('articles')->insert([
+        'author_id'=>1,
+        'cover_img'=>Str::random(10),
+        'title'=>Str::random(10),
+        'byline'=>Str::random(10),
+        'place'=>Str::random(10),
+        'content'=>Str::random(10),
+        'content_img'=>Str::random(10),
+        'approved'=>0,
+        'hero_article'=>0,
+        'secondary_article'=>1
+      ]);
+    }
+}
