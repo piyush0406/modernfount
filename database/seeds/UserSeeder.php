@@ -12,7 +12,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $password = Hash::make('1234');
+        $password = Hash::make('mode3nF0unt');
          DB::table('users')->insert([
             'name' => 'Administrator',
             'role' => 1,
