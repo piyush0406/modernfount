@@ -14,9 +14,9 @@ class WriterSeeder extends Seeder
         //
         $password = bcrypt('1234');
          DB::table('users')->insert([
-            'name' => 'writer',
+            'name' => 'Writer',
             'role' => 2,
-            'email' => 'writer@contree.in',
+            'email' => 'writer@modernfount.in',
             'password' => $password,
         ]);
     }

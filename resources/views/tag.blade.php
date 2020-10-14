@@ -5,14 +5,14 @@
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Tag | News Room</title>
+		<title>Tag | Modern Fount</title>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&amp;family=Spartan:wght@500;600;700&amp;display=swap" rel="stylesheet">
         <link href="{{ asset('css/cover.css') }}" rel="stylesheet">
         <link rel="canonical" href="index.html" />
 				<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <script defer src="../../public/members.min93e2.js?v=8a67789b6a"></script>    
+    <script defer src="../../public/members.min93e2.js?v=8a67789b6a"></script>
     <link rel="alternate" type="application/rss+xml" title="Renge" href="../../rss/index.html" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -22,7 +22,7 @@
 				<header class="header-section">
 					 <div class="header-wrap">
 							<div class="header-logo">
-								 <h1 class="is-image"><a href="{{ url('/')}}"><img src="{{ asset('images/contree1.png') }}" alt="Newsroom"></a></h1>
+								 <h1 class="is-image"><a href="{{ url('/')}}"><img src="{{ asset('images/mf_white.png') }}" alt="MF"></a></h1>
 							</div>
 							<div class="header-nav">
 								 <input id="toggle" class="header-checkbox" type="checkbox">
@@ -43,6 +43,16 @@
 										<ul>
 											 @auth
 												 <li> <a href="{{ url('/signin')}}"> {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}} </a> </li>
+												 <li>
+													 <a class="dropdown-item" href="{{ route('logout') }}"
+														 onclick="event.preventDefault();
+																					 document.getElementById('logout-form').submit();">
+															{{ __('Logout') }}
+													</a>
+													<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+															@csrf
+													</form>
+												 </li>
 											 @else
 												 <li class="signin"><a href="{{ url('/signin')}}">Sign in</a></li>
 											 @endauth
@@ -143,53 +153,32 @@
 </div>
 				</main>
 				<footer class="footer-section global-footer">
-					 <div class="footer-wrap">
-							<div class="footer-data">
-								<p class="footer-description">
-									<b>Contact Us</b>
-									<br>E-111/112 Durga Park, Ambabari,
-									<br>Vidyadhar Nagar, Jaipur,
-									<br>Rajasthan 302039</p>
-									<br>
-									<a href="mailto:rohit@contree.in"><p class="footer-description">rohit@contree.in</p></a>
-									<a href="tel:8949032828"><p class="footer-description">+91-8949032828</p></a>
-
-							<div class="footer-icons">
-								<a href="https://www.facebook.com/letscontree/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-								<a href="https://twitter.com/letuscontree" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-								<a href="https://www.instagram.com/letscontree/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<a href="https://www.youtube.com/channel/UCDLp_Jf6cIxczsGn3CtOQWQ" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-							</div>
-							</div>
-							<div class="footer-nav ml-auto">
-								<div class="footer-nav-column">
-									 <ul>
-											<li><a href="{{ url('https://contree.in/Event/List')}}" target="_blank" >Events</a></li>
-											<li><a href="{{ url('https://contree.in/Organization/List')}}" target="_blank">Organizations</a></li>
-											<li><a href="{{ url('https://contree.in/Home/About')}}" target="_blank">About</a></li>
-											<li><a href="{{ url('https://contree.in/Home/Media')}}" target="_blank">Media Coverage</a></li>
-									 </ul>
-								</div>
-								<div class="footer-nav-column">
-									 <ul>
-											<li><a href="{{ url('https://contree.in/Pages/FAQ')}}" target="_blank" >FAQ</a></li>
-											<li><a href="{{ url('https://contree.in/Pages/TermsAndConditions')}}" target="_blank">T&C</a></li>
-											<li><a href="{{ url('https://contree.in/Pages/PrivacyPolicy')}}" target="_blank">Privacy Policy</a></li>
-									 </ul>
-								</div>
-								 <div class="footer-nav-column">
-										<ul>
-											 <li><a href="{{ url('/')}}">Home</a></li>
-											 <li><a href="{{ url('/authors')}}">Authors</a></li>
-											 <li><a href="{{ url('/tags')}}">Tags</a></li>
-											 <li><a href="{{ url('/article')}}">Articles</a></li>
-										</ul>
-								 </div>
-							</div>
-					 </div>
-					 <div class="footer-copyright">
-							Contree Management Services Pvt. Ltd &copy; 2020. Made By <strong>Delta WebWorks</strong>.
-					 </div>
+				   <div class="footer-wrap">
+				      <div class="footer-data">
+				        <p class="footer-description"></p>
+				          <br>
+				          <a href="mailto:piyush0406@protonmail.com"><p class="footer-description">piyush0406@protonmail.com</p></a>
+				      <div class="footer-icons">
+				        <a href="https://www.facebook.com/pshroy/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				        <a href="https://twitter.com/pshroy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				        <a href="https://github.com/piyush0406" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+				        <a href="https://www.linkedin.com/in/piyush0402/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				      </div>
+				      </div>
+				      <div class="footer-nav ml-auto">
+				         <div class="footer-nav-column">
+				            <ul>
+				               <li><a href="{{ url('/')}}">Home</a></li>
+				               <li><a href="{{ url('/authors')}}">Authors</a></li>
+				               <li><a href="{{ url('/tags')}}">Tags</a></li>
+				               <li><a href="{{ url('/article')}}">Articles</a></li>
+				            </ul>
+				         </div>
+				      </div>
+				   </div>
+				   <div class="footer-copyright">
+				      &copy;<strong>Piyush</strong>
+				   </div>
 				</footer>
 </div>
 		</div>

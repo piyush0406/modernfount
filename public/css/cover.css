@@ -48,7 +48,7 @@
 	--color-two: #f7f9f9;
 	--color-three: #485b73;
 	--color-four: #242d39;
-	--color-body: #182029;
+	--color-body: black;
 	--color-dots: #485b73;
 	--color-search-close: #f7f9f9;
 	--bg-color-all: #293340;
@@ -3511,6 +3511,9 @@ small.global-question a:hover {
 	.footer-nav-column {
 		flex: 1 0 50%
 	}
+	.footer-section {
+		text-align: center;		
+	}
 }
 
 @media (min-width:481px) and (max-width:768px) {
@@ -4300,7 +4303,7 @@ small.global-question a:hover {
 }
 
 .global-hash-details-amethyst {
-	--color-details: #b690ff
+	--color-details: #ff4d4d;
 }
 
 .global-hash-details-sky {
@@ -4512,7 +4515,7 @@ small.global-question a:hover {
 }
 
 .tag-hash-post-raspberry .global-color::after {
-	background-color: #ff4a97
+	background-color: #1282A2
 }
 
 .tag-hash-post-olive .global-color::after {
