@@ -6,7 +6,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Dashboard | News Room</title>
+      <title>Dashboard | Modern Fount</title>
       <script src="{{ asset('js/app.js') }}" defer></script>
       <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&amp;family=Spartan:wght@500;600;700&amp;display=swap" rel="stylesheet">
       <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
@@ -16,7 +16,7 @@
    </head>
      <body class="sb-nav-fixed">
          <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-             <a class="navbar-brand" href="{{ url('/')}}"><img src="{{ asset('images/contree.png') }}" alt="contree.logo" width="60%"></a>
+             <a class="navbar-brand" href="{{ url('/')}}"><img src="{{ asset('images/mf_white1.png') }}" alt="MF.logo" width="60%"></a>
              <button class="btn btn-link btn-sm order-o order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-bars"></i></button>
 
              <!-- Navbar-->
