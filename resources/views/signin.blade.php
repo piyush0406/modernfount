@@ -22,7 +22,7 @@
             <div class="custom-image global-bg-image" style="background-image: url(https://images.unsplash.com/photo-1587136527307-f53f514267d7?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ)"></div>
             <div class="custom-container">
                 <div class="custom-logo">
-                    <a class="is-image" href="{{ url('/')}}"><img src="{{ asset('images/contree1.png') }}" alt="Newsroom"></a>
+                    <a class="is-image" href="{{ url('/')}}"><img src="{{ asset('images/mf_white.png') }}" alt="mf_white"></a>
                 </div>
                 <div class="custom-content">
                     <form method="POST" action="{{ route('login') }}">
